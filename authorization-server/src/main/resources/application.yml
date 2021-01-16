@@ -1,0 +1,16 @@
+server:
+  port: 5858
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/authorization_server
+    username: authorization_server
+    password: authorization_server
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  application:
+    name: auth-server
+  redis:
+    host: localhost
+    port: 6379
